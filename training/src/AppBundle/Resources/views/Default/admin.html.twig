@@ -1,0 +1,15 @@
+{% extends 'AppBundle::admin-base.html.twig' %}
+
+{% block navigation %}
+<ul>
+    <li><a href="{{ url('adminhome') }}">Dashboard</a></li>
+    <li><a href="#">Posts</a></li>
+    <li><a href="#">Comments</a></li>
+    <li><a href="#">Categories</a></li>
+    <li><a href="#">Authors</a></li>
+</ul>
+{% endblock %}
+
+{% block body %}
+<h1>This is the admin section.</h1>
+{% endblock %}

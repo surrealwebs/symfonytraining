@@ -1,0 +1,3 @@
+blog_reader_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BlogReaderBundle:Default:index }

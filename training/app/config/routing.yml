@@ -1,3 +1,7 @@
+blog_reader:
+    resource: "@BlogReaderBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

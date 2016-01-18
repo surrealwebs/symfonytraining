@@ -1,0 +1,19 @@
+<h2>Recent Posts</h2>
+
+{% if recent_posts %}
+    <ul>
+        {{ for post in recent_posts }}
+        <li>
+            <div>
+                Post here please
+            </div>
+        </li>
+        {{ endfor }}
+    </ul>
+
+    {% if is_admin %}
+        <p><a href="{{ path('blogaddnew') }}">Add new post</a></p>
+    {% endif %}
+{% else %}
+    <p>No recent posts...{% if is_admin %}<a href="{{ path('blogaddnew') }}">Make one!</a>{% endif %}</p>
+{% endif %}

@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "behat/symfony2-extension": "^2.1"
+    }
+}
